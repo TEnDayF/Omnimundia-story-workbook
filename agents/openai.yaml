@@ -1,0 +1,4 @@
+interface:
+  display_name: "Omnimundia 剧本 Excel 制作"
+  short_description: "面向 Omnimundia 网站的原创或二创剧本表制作与修订，按需问答，核对译名、开局、信息保密及字数"
+  default_prompt: "使用 $story-workbook，根据我提供的设定、原作或现有表格制作或完善剧本 Excel；沿用已确认要求，只询问影响交付的关键缺口。"
