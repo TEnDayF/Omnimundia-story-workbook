@@ -1,10 +1,24 @@
 # Omnimundia：story-workbook
 
-**一个专门给 [Omnimundia](https://omnimundia.cn/) 网站制作、整理和修订剧本 Excel 的 AI Skill。**
+**面向 [Omnimundia](https://omnimundia.cn/) 创作者的 AI 剧本制作 Skill：把世界观、角色与玩法设定，整理成供平台 AI 推演的互动文字冒险剧本。**
 
-适用于支持 `SKILL.md` 的 AI 助手。它帮助你把原创设定或现有剧本整理成网站所用的十工作表格式，处理开局、角色属性、隐藏信息、剧情点、词条和篇幅等问题。
+Omnimundia 是一个 **AI 互动阅读平台**，以“世界树”为核心，由剧本驱动 AI 推演故事。玩家每回合可以选择选项，也可以自由输入自己的想法；通过保存和读取世界线，从已有存档继续探索新的走向。数值、关系和行动结果会影响后续故事。平台定位与玩法见官网的[关于 Omnimundia](https://omnimundia.cn/about)。
 
-**Excel 模板请自行到 [Omnimundia 网站](https://omnimundia.cn/) 导出。本仓库不提供 Excel 模板或示例工作簿。**
+在这样的玩法下，创作者需要给 AI 提供可持续推演的世界：世界如何运转、角色知道什么、行动如何改变状态，以及事件何时发生。`story-workbook` 用于辅助这一制作过程：让支持 Skill 的 AI 助手按需追问设定、组织信息、检查矛盾，并依据用户从网站导出的 Excel 模板填写或修订剧本，为玩家的自由决策和不同世界线留下空间。
+
+## 它能帮你做什么
+
+- **从设定开始制作剧本**：梳理世界规则、主控身份和开局，只询问影响交付的关键缺口。
+- **让行动产生后果**：组织角色属性、物品、关系、事件条件及分支承接，给 AI 推演提供依据。
+- **管理玩家知道的信息**：区分公开状态、待解锁词条与后台规则，检查提前泄露真相的问题。
+- **修改已有剧本**：调整开局、角色替换、文风和篇幅，同时核对引用与前后因果。
+- **检查制作结果**：附带十表结构校验脚本，并区分文本检查、文件检查和网站实际试玩。
+
+## 使用流程
+
+**从 Omnimundia 导出模板 → 把模板与设定交给 AI 助手 → 调用 Skill 制作或修订 → 检查结果 → 回到网站导入并试玩。**
+
+**Excel 模板请自行到 [Omnimundia](https://omnimundia.cn/) 导出。本仓库不提供 Excel 模板或示例工作簿。**
 
 ## 安装
 
@@ -55,6 +69,23 @@ python scripts/check_workbook.py path/to/your-story.xlsx
 
 离线使用 Skill 不需要配置 Omnimundia API Key；上传和试玩按网站正常登录流程操作。Skill 不会自动启动游玩。
 
-## 许可
+## 许可与署名
 
-当前分享源文件，暂未指定开源许可证。除平台条款允许的行为外，不据此授予额外的使用、修改或分发许可；后续由维护者明确授权范围。来源说明见 [分享说明](docs/SHARING.md)。
+Copyright © 2026 TEnDayF。
+
+除另有标注的第三方内容外，本仓库由维护者有权授权的内容，包括 Skill、参考文档、示例及附带脚本，采用 **[CC BY-NC-SA 4.0（署名—非商业性使用—相同方式共享）](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans)**。完整条款见 [LICENSE](LICENSE)。
+
+分享本 Skill 或其改编版本时，请署名 **TEnDayF**，保留来源与许可证链接，标明修改，并遵守非商业及相同方式共享条件。这是带非商业限制的共享许可，不宣称是开源软件许可证。
+
+建议署名方式：
+
+> Omnimundia：story-workbook — TEnDayF；来源：https://github.com/TEnDayF/Omnimundia-story-workbook ；CC BY-NC-SA 4.0。若有修改，请补充修改说明。
+
+**使用本 Skill 创作的剧本不因使用本 Skill 而受本仓库许可证约束，也无需向 TEnDayF 或本 Skill 署名。** 用户自行决定其剧本的发布、署名和许可方式。直接复制或改编仓库内受保护的示例、文档或代码，相关复制／改编部分仍适用对应许可；其他素材与网站的权利不由本仓库授予。
+
+## 反馈与维护
+
+接受 Issue 和 Pull Request，是否合并由维护者 **TEnDayF** 决定；不承诺处理所有建议。
+本项目按需维护，不保证响应时间或固定更新频率。贡献说明见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+
+本 Skill 面向 [Omnimundia](https://omnimundia.cn/)，未声明网站官方背书。来源与授权范围见 [分享说明](docs/SHARING.md)。

@@ -14,14 +14,21 @@
 保留内容来自本地 story-workbook 技能。本次做了内容与引用筛选，但没有完成其全部历史来源的权利审计。
 schema 描述的是已有十表结构，不能把格式约定的整理说成平台或格式本身的原创。
 本包不包含任何网站实现，不表示与平台存在官方合作。
-未替所有者选择 MIT、Apache-2.0 或内容许可证，也没有编造版权人。
-仓库当前提供源文件公开查看，尚未授予额外的使用、修改或分发许可。后续可分别为代码和故事内容注明许可范围。
+Copyright © 2026 TEnDayF。
 
-## 维护者后续设置
+维护者有权授权的 Skill、文档、JSON 示例及附带脚本统一采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans)。完整许可见 [LICENSE](../LICENSE)，署名与来源格式见 [README](../README.md#许可与署名)。第三方内容如另有标注，保留其原有权利与许可。
 
-1. 许可证：决定允许别人如何使用、修改和分发，再加入 LICENSE；这是明确开源授权前需要决定的事项。
-2. 网站验证：在 Omnimundia 实际导入、回读、试玩之后，补充版本、日期和验证范围。
-3. GitHub Actions：工作流只运行公开文件的 Python 校验，无须添加 Secrets、API Key 或网站账号。
-4. 可选：启用 Discussions 收集创作问题，发布 Release 固定版本，或添加 CONTRIBUTING.md 说明贡献规则。
+使用 Skill 创作的剧本不因使用本 Skill 而受仓库许可约束，无需向 TEnDayF 或 Skill 署名，用户自行决定剧本的发布与许可。直接复制或改编仓库受保护内容的部分仍按对应许可处理。
 
-维护者：TEnDayF。目标网站：https://omnimundia.cn/ 。本项目未声明网站官方背书。
+## 反馈与维护
+
+接受 Issue 和 Pull Request，由 TEnDayF 决定是否合并，不承诺处理所有建议。
+按需维护，不保证响应时间或固定更新频率。参见 [贡献说明](../CONTRIBUTING.md)。
+
+本 Skill 面向 [Omnimundia](https://omnimundia.cn/)，未声明网站官方背书。
+GitHub Actions 仅执行仓库内的 Python 检查，无须配置网站账号、API Key 或 Secrets。
+
+## 介绍资料与核验范围
+
+2026-10-20：通过浏览器实际查看官网[关于 Omnimundia](https://omnimundia.cn/about)、[剧本大全](https://omnimundia.cn/scripts)及创作剧本入口。官网将自身定义为 AI 互动阅读平台，介绍了由剧本驱动 AI、选项与自由输入、存档和世界线分支，以及数值、关系和行动后果对后续故事的影响。README 的平台介绍据此整理。
+此次仅查看页面，没有新建或修改网站剧本，也没有执行模板导出、文件导入或实际试玩。本仓库的十表制作细节来自已有制作实践，当前兼容性仍需用网站导出的模板核实；查看官网不表示获得网站官方背书。
